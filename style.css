@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 50px;
+    background-color: rgb(5, 1, 7);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.game-container {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: "Poppins";
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgba(173, 92, 255, 0.432);
+}
+
+.game-info {
+    padding: 0 40px;
+    font-weight: 900;
+    font-family: "Poppins";
+}
+.game-info div{
+    padding: 20px;
+}
+.game-info h1{
+    color: rgb(135, 19, 243);
+    font-weight: 900;
+}
+#reset{
+    background-color:rgb(135, 19, 243);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin: 0 10px;
+}
+.content{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    position: relative;
+    bottom: 220px;
+    left: 190px;
+    border-radius: 10px;
+    display: none;
+    transition: all ease-in-out 3s;
+    border: 3px solid rgb(240, 19, 141);
+    box-shadow: 0 0 30px blueviolet;
+}
+
+.content div{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all ease-in-out 3s;
+}
+.winbox{
+    float: right;
+    color: rgb(0, 0, 0);
+    padding: 0 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.win{
+    /* position: relative;
+    top: 100px;
+    left: 100px; */
+    display: block;
+
+    width: 100%;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .game-container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .game-info{
+        margin-top: 20px;
+        font-size: 0.6rem;
+    }
+}
